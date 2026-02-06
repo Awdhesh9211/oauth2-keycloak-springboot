@@ -4,10 +4,13 @@ server:
 
 spring:
   application:
-    name: client-server-client
+    name: oauth2-client
 
   security:
     oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8089/realms/oauth2-client-flow
       client:
         registration:
           keycloak-client:
