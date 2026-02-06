@@ -1,0 +1,56 @@
+### ======== Spring Boot / Java ======== ###
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### ======== STS / Spring Tools ======== ###
+.springBeans
+.sts4-cache/
+
+### ======== IntelliJ IDEA ======== ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### ======== Eclipse ======== ###
+.classpath
+.project
+.settings/
+
+### ======== Maven ======== ###
+.mvn/
+!/.mvn/wrapper/
+
+### ======== Gradle ======== ###
+.gradle/
+build/
+
+### ======== OS Files ======== ###
+.DS_Store
+Thumbs.db
+
+### ======== Logs ======== ###
+*.log
+
+### ======== Environment / Secrets ======== ###
+.env
+*.env
+application-*.yml
+application-*.properties
+
+### ======== Docker ======== ###
+docker-compose.override.yml
+
+### ======== VS Code ======== ###
+.vscode/
+
+### ======== Node (if you have frontend) ======== ###
+node_modules/
+
+
+target/
+.idea/
+*.log
+.env

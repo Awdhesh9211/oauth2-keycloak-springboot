@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: oauth2flow
+
+  security:
+    oauth2:
+      client:
+        registration:
+          oauth2-code-flow:
+            client-id: oauth2-flow
+            client-secret: Ca92HJkTKw2s3PyZpz3xWm11T37j8tD3
+            scope: openid, profile, email, roles
+            authorization-grant-type: authorization_code
+            redirect-uri: http://localhost:8080/login/oauth2/code/keycloak
+            provider: keycloak      # ← THIS LINKS TO THE PROVIDER BELOW
+
+        provider:
+          keycloak:                 # ← PROVIDER ID (NAME)
+            issuer-uri: http://127.0.0.1:8089/realms/oauth2_learn
