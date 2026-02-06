@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: resourceserver
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8089/realms/oauth2-client-flow
+
+
+server:
+  port: 8082

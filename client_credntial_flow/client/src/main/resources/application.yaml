@@ -1,0 +1,24 @@
+# ================= application.yml =================
+server:
+  port: 8081
+
+spring:
+  application:
+    name: oauth2-client
+
+  security:
+    oauth2:
+      client:
+        registration:
+          keycloak-client:
+            client-id: client-flow
+            client-secret: PTvY8JuKL0WyeI8UotSdUJf5J9aMuj8p
+            authorization-grant-type: client_credentials
+            scope: openid
+
+        provider:
+          keycloak-client:
+            token-uri: http://localhost:8089/realms/oauth2-client-flow/protocol/openid-connect/token
+
+service:
+  uri: http://localhost:8082
